@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 function Header() {
 
     const navStyle = {
-        color: 'white'
+        color: 'white'        
     };
 
     return (
         <nav className='nav1'>
-            <Link to='/'>
+            <Link style={navStyle} to='/'>
                 <h3>Logo</h3>
             </Link>
             <ul className='navLink'>
