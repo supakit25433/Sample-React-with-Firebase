@@ -1,9 +1,10 @@
 import React from 'react';
 import Login from './components/LoginForm';
 import Header from './components/Header';
-import About from './components/About'
+import About from './components/About';
 import Contact from './components/Contact';
-import Register from './components/RegisterForm'
+import Register from './components/RegisterForm';
+import Home from './components/Home'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 
@@ -23,11 +24,5 @@ function App() {
     </Router>
   );
 }
-
-const Home = () => (
-  <div>
-    <h1>Homepage</h1>
-  </div>
-);
 
 export default App;
