@@ -7,25 +7,27 @@ function Header() {
         color: 'white'
     };
 
-        return (
-            <nav className='nav1'>
+    return (
+        <nav className='nav1'>
+            <Link to='/'>
                 <h3>Logo</h3>
-                <ul className='navLink'>
-                    <Link style={navStyle} to='/about'>
-                        <li className=''>About</li>
-                    </Link>
-                    <Link style={navStyle} to='/contact'>
-                        <li>Contact</li>
-                    </Link>
-                    <Link style={navStyle} to='/login'>
-                        <li>Login</li>
-                    </Link>
-                    <Link style={navStyle} to='/signup'>
-                        <li>Sign Up</li>
-                    </Link>
-                </ul>
-            </nav>
-        );
+            </Link>
+            <ul className='navLink'>
+                <Link style={navStyle} to='/about'>
+                    <li className=''>About</li>
+                </Link>
+                <Link style={navStyle} to='/contact'>
+                    <li>Contact</li>
+                </Link>
+                <Link style={navStyle} to='/login'>
+                    <li>Login</li>
+                </Link>
+                <Link style={navStyle} to='/signup'>
+                    <li>Sign Up</li>
+                </Link>
+            </ul>
+        </nav>
+    );
 }
 
 export default Header
